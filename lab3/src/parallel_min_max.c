@@ -47,16 +47,15 @@ int main(int argc, char **argv) {
             break;
           case 1:
             array_size = atoi(optarg);
-            if (array_size <= 0)
-             {
+            if (array_size <= 0) {
                 printf("array_size is a positive number\n");
                 return 1;
-             }
+            }
             break;
           case 2:
             pnum = atoi(optarg);
-            if (array_size <= 0) {
-                printf("array_size is a positive number\n");
+            if (pnum <= 0) {
+                printf("pnum is a positive number\n");
                 return 1;
             }
             break;
