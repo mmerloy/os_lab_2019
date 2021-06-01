@@ -51,7 +51,7 @@ int main(int argc, char **argv)
 {
   int seed = -1;
   int array_size = -1;
-  pnum = -1;
+  int pnum = -1;
   int alarm_time = -1;
   bool with_files = false;
 
@@ -142,7 +142,7 @@ int main(int argc, char **argv)
   }
 
   if (seed == -1 || array_size == -1 || pnum == -1) {
-    printf("Usage: %s --seed \"num\" --array_size \"num\" --pnum \"num\" \n",
+    printf("Usage: %s --seed \"num\" --array_size \"num\" --pnum \"num\" --timeout \"num\" \n",
            argv[0]);
     return 1;
   }
